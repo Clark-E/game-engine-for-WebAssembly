@@ -1,4 +1,4 @@
-#include "main.h"
+#include "io.h"
 
 #ifdef __EMSCRIPTEN__
 
