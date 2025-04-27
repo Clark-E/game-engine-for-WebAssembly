@@ -1,1 +1,0 @@
-emcc src/main.cpp src/io.cpp -s WASM=1 -o index.html --shell-file src/shell.html -sEXPORTED_FUNCTIONS=_onConsoleInput,_main -sEXPORTED_RUNTIME_METHODS=ccall,cwrap

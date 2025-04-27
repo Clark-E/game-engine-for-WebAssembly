@@ -1,21 +1,28 @@
 #include "io.h"
+#include "room.h"
 #include <iostream>
 
 int main(){
     
-	println("Hello, world!");
-    
+	//program entry point
+	
+	//do initialization
+	
+	Room::loadRooms();
+	
 	#ifndef __EMSCRIPTEN__
-   	 
+		
+		//in native builds, we need to manually poll the input in the c code.
+		
     	while(true){
-       	 
+			
         	std::string input;
         	std::getline(std::cin, input);
-       	 
+			
         	processInput(input.c_str());
-       	 
+			
     	}
-   	 
+		
 	#endif
     
 	return(0);
@@ -24,10 +31,6 @@ int main(){
 
 void processInput(const char* input){
     
-    println(input);
-    
-    //pretend we're running game logic...
-    
-    println("Pretend this is the game’s text output.");
-    
+	//processes text input from the user.
+	
 };
