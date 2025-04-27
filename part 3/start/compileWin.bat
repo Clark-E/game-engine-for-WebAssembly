@@ -1,0 +1,1 @@
+cl /std:c++20 ./src/*.cpp /EHsc /Fe: main.exe
