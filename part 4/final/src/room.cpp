@@ -6,6 +6,8 @@
 
 void Room::loadRooms(){
 	
+	//Load the map.csv file
+	
 	std::string roomData = readFile("build data/map.csv");
 	
 	CsvParser roomParser = CsvParser(roomData);

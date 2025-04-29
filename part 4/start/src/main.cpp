@@ -8,6 +8,8 @@ int main(){
 	
 	//do initialization
 	
+	Room::loadRooms();
+	
 	#ifndef __EMSCRIPTEN__
 		
 		//in native builds, we need to manually poll the input in the c code.

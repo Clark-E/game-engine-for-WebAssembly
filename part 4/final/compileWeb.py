@@ -6,7 +6,6 @@ sourceFiles = [];
 SRC_PATHS = {
 	
 	"./src",
-	"./glad/src",
 	
 };
 

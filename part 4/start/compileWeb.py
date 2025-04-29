@@ -6,13 +6,6 @@ sourceFiles = [];
 SRC_PATHS = {
 	
 	"./src",
-	"./glad/src",
-	
-};
-
-PRELOAD_FILES = {
-	
-	"./build data"
 	
 };
 
@@ -29,9 +22,6 @@ fullCommand = EMCC_COMMAND_START;
 
 for file in sourceFiles:
 	fullCommand += " \"{0}\"".format(file);
-
-for file in PRELOAD_FILES:
-	fullCommand += " --preload-file \"{0}\"".format(file);
 
 print(fullCommand)
 os.system(fullCommand)

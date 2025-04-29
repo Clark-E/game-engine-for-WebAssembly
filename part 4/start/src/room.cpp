@@ -6,4 +6,6 @@
 
 void Room::loadRooms(){
 	
+	//Load the rooms from room.csv
+	
 };
