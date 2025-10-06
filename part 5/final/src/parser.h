@@ -19,12 +19,15 @@ class Parser{
 	};
 	
 	void processCommand(const std::string);
-	void parseLookCommand();
-	
-	void printHelp(Command);
-	void lookInDirection(Direction);
 	
 	private:
+	
+	void parseLookCommand();
+	void parseMoveCommand();
+	void parseHelpCommand();
+	
+	//void printHelp(Command);
+	void lookInDirection(Direction,bool);
 	
 	Command wordToCommand(const std::string);
 	Direction wordToDirection(const std::string);

@@ -1,7 +1,0 @@
-index.html
-index.js
-*.wasm
-*.out
-*.obj
-*.~*
-*.exe
